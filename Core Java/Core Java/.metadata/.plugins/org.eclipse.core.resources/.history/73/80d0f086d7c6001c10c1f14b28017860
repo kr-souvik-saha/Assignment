@@ -1,0 +1,22 @@
+package com;
+
+import java.util.Scanner;
+
+public class StringPlay {
+
+	public static void main(String[] args) {
+		String str="JAVA is Simple";
+		String strArr[]=str.split(" ");
+		
+		System.out.println("The string in upper case is : "+str.toUpperCase());
+		System.out.println("The String in lower case is : "+str.toLowerCase());
+		System.out.println("The length of the given string is : "+str.length());
+		
+		System.out.print("The first alphabt of every word is : ");
+		for(int i=0;i<strArr.length;i++) {
+			strArr[i].charAt(1);
+		}
+
+	}
+
+}

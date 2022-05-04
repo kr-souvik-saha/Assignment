@@ -1,0 +1,10 @@
+package com;
+
+public class StringRotate {
+
+	public static void main(String[] args) {
+		String str="JAVASCRIPT";
+		String strArr=str.split("");
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.mycompany.DAO;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.mycompany.dbutil.DBUtil;
+import com.mycompany.domain.Product;
+
+public class ProductManagementDAO {
+	 public List<Product> getAllProducts()
+	    {
+	        List<Product> productList = new ArrayList<Product>();
+	        try
+	        {
+	            //typical jdbc coding
+	            Connection conn = DBUtil.getConnection();
+	            Statement st = conn.createStatement();
+	            ResultSet rs = st.executeQuery("SELECT * FROM product");
+	            while(rs.next())
+	            {
+	                Product product = new Product(rs.getInt("prod_id"), rs.getString("prod_name"), rs.getInt("prod_price"));
+	                productList.add(product);
+	            }
+	            DBUtil.closeConnection(conn);  //close connection
+	        }
+	        catch(Exception e)
+	        {
+	            e.printStackTrace();
+	        }
+
+	        return productList;
+	    }
+}

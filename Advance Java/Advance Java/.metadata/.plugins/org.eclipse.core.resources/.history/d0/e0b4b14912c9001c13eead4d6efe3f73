@@ -1,0 +1,52 @@
+package com.mycompany.app;
+
+public class ProductManagementApp {
+	
+	public static void main(String[] args)throws Exception {
+		String choice="";
+		
+		do {
+			System.out.println("A. View Products");
+			System.out.println("B. Add Product");
+			System.out.println("C. Update Product");
+			System.out.println("D. Delete Product");
+			System.out.println("E. Search product");
+			System.out.println("F. Exit");
+			System.out.println("=================================================================");
+			System.out.println("Enter an option");
+			System.out.println("=================================================================");
+			
+			choice=choice.toUpperCase();
+			
+			if(choice=="A") {
+//				return viewProduct();
+				System.out.println("A");
+			}
+			else if(choice=="B") {
+//				return addProduct();
+				System.out.println("B");
+			}
+			else if(choice=="C") {
+//				return updateProduct();
+				System.out.println("C");
+			}
+			else if(choice=="D") {
+//				return deleteProduct();
+				System.out.println("D");
+			}
+			else if(choice=="E") {
+//				return searchproduct();
+				System.out.println("E");
+			}
+			else if(choice=="F") {
+				System.out.println("******************************THANK YOU********************");
+				System.exit(0);
+			}
+			else {
+				System.out.println("Invalid Option! please enter again");
+				continue;
+			}
+		}while(choice!="F");
+	}
+
+}

@@ -1,0 +1,57 @@
+package com;
+
+import java.util.Scanner;
+
+public class RectangleTest {
+	
+	public static int length;
+	public static int breadth;
+	public static int area;
+	
+	public static void main(String[] args) {
+		
+		RectangleTest tr= new RectangleTest();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter length and breadth for rectangle 1: ");
+		tr.length=sc.nextInt();
+		tr.breadth=sc.nextInt();
+		tr.area= length * breadth;
+		System.out.println("area of rectangle 1: "+ tr.area);
+		
+		//2nd object
+		RectangleTest tr2= new RectangleTest();
+		System.out.println("enter length and breadth for rectangle 2: ");
+		tr2.length=sc.nextInt();
+		tr2.breadth=sc.nextInt();
+		tr2.area= length * breadth;
+		System.out.println("area of rectangle 2: "+ tr2.area);
+		
+		//3rd object
+		RectangleTest tr3= new RectangleTest();
+		Scanner sc1=new Scanner(System.in);
+		System.out.println("enter length and breadth for rectangle 3: ");
+		tr3.length=sc1.nextInt();
+		tr3.breadth=sc1.nextInt();
+		tr3.area= length * breadth;
+		System.out.println("area of rectangle 3: "+ tr3.area);
+		
+		//4th object
+		RectangleTest tr4= new RectangleTest();
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter length and breadth for rectangle 4: ");
+		tr3.length=scan.nextInt();
+		tr3.breadth=scan.nextInt();
+		tr3.area= length * breadth;
+		System.out.println("area of rectangle 4: "+ tr4.area);
+		
+		//5th object
+		RectangleTest tr5= new RectangleTest();
+		Scanner sc2=new Scanner(System.in);
+		System.out.println("enter length and breadth for rectangle 5: ");
+		tr3.length=sc2.nextInt();
+		tr3.breadth=sc2.nextInt();
+		tr3.area= length * breadth;
+		System.out.println("area of rectangle 5: "+ tr5.area);
+	}
+
+}
